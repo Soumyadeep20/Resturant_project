@@ -1,9 +1,9 @@
-:root{
+:root {
     --font-col: white;
     --bg-col: black;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -12,12 +12,12 @@
     color: var(--font-col);
 }
 
-body{
+body {
     background-color: black;
 }
 
 /* Styling for navbar or header */
-header{
+header {
     height: 10vh;
     width: 100%;
     border: 1px solid black;
@@ -28,7 +28,7 @@ header{
 }
 
 header #logo,
-header #social-icons{
+header #social-icons {
     height: 100%;
     width: 20%;
     display: flex;
@@ -36,15 +36,15 @@ header #social-icons{
     justify-content: space-evenly;
 }
 
-header #logo{
+header #logo {
     letter-spacing: 1px;
 }
 
-header #social-icons{
+header #social-icons {
     font-size: 30px;
 }
 
-header nav{
+header nav {
     height: 100%;
     width: 50%;
     display: flex;
@@ -55,12 +55,12 @@ header nav{
 
 /* Styling for landing section */
 
-section{
+section {
     height: 100vh;
     width: 100%;
 }
 
-#landing-section{
+#landing-section {
     height: 90vh;
     background: url(https://img.freepik.com/free-photo/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai_188544-12347.jpg?t=st=1711188957~exp=1711192557~hmac=22e08077fcd1cd2fa1a698dd6c78d98bff86c8e2752a060d575812949c59829b&w=1380);
     opacity: 0.8;
@@ -69,32 +69,32 @@ section{
     background-position: center;
 }
 
-#landing-section #slogan{
+#landing-section #slogan {
     height: 100%;
     width: 50%;
     padding: 80px;
 }
 
-#landing-section #slogan h1{
+#landing-section #slogan h1 {
     font-family: "Quattrocento", serif;
     font-size: 65px;
     letter-spacing: 8px;
 }
 
 #landing-section #slogan hr,
-#landing-section .para{    
+#landing-section .para {
     width: 65%;
-    margin: 30px 0px;   
+    margin: 30px 0px;
 }
 
-#landing-section #slogan hr{
+#landing-section #slogan hr {
     height: 10px;
     background-color: #f24c4c;
     border: none;
     border-radius: 10px;
 }
 
-#landing-section #slogan p{
+#landing-section #slogan p {
     letter-spacing: 2px;
     font-size: 18px;
     line-height: 30px;
@@ -102,12 +102,13 @@ section{
 
 /* About us styling */
 
-#about-us{
+#about-us {
     padding: 50px 120px;
 }
 
 #about-us h1,
-#menu h1{
+#menu h1,
+#carousel h1 {
     text-align: center;
     font-size: 50px;
     font-family: "Quattrocento", serif;
@@ -115,7 +116,7 @@ section{
     margin-bottom: 15px;
 }
 
-#about-us .about-us{
+#about-us .about-us {
     height: 80%;
     width: 100%;
     display: flex;
@@ -124,13 +125,14 @@ section{
 }
 
 #about-us .about-us p,
-#menu p{
+#menu p {
     line-height: 30px;
     letter-spacing: 2px;
 }
 
 #about-us hr,
-#menu hr{
+#menu hr,
+#carousel hr {
     height: 8px;
     background-color: #9f0101;
     border: none;
@@ -138,19 +140,19 @@ section{
     margin: auto;
 }
 
-#about-us .about-us .aboutus-para{
+#about-us .about-us .aboutus-para {
     width: 40%;
     height: auto;
     padding: 10px;
     border-top: 4px solid #9f0101;
 }
 
-#about-us .about-us img{
+#about-us .about-us img {
     height: 80%;
     clip-path: circle(350px at center)
 }
 
-#about-us .about-us hr{
+#about-us .about-us hr {
     height: 8px;
     background-color: #9f0101;
     border: none;
@@ -159,25 +161,24 @@ section{
 
 /* Menu items styling */
 
-#menu{
+#menu {
     padding: 0px 100px;
     height: 150vh;
 }
 
-#menu p{
+#menu p {
     margin-top: 50px;
 }
 
-.menu-container{
+.menu-container {
     height: 80%;
     width: 100%;
     /* border: 1px solid red;     */
-    display: grid;
-    grid-template-columns: repeat(2);
-    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.menu-container .menu-items{
+.menu-container .menu-items {
     height: 33%;
     width: 50%;
     /* border: 1px solid yellow; */
@@ -186,14 +187,86 @@ section{
     justify-content: space-between;
 }
 
-.menu-container .menu-items img{
+.menu-container .menu-items img {
     width: 50%;
 }
 
 /* Footer styling */
 
-footer{
-    height: 30vh;
+footer {
+    height: 20vh;
     width: 100%;
-    border: 1px solid yellow;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .container {
+    padding: 0px 0px 0px 30px;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .container .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+footer .container img {
+    height: 100%;
+    width: auto;
+}
+
+footer .container i {
+    font-size: 55px;
+}
+
+/* Carousel styling */
+
+#carousel {
+    padding: 20px 50px;
+}
+
+.carousel {
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel-items {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.carousel-items img {
+    width: 100%;
+    height: 100%;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 6em;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
 }
