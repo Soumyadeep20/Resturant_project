@@ -1,0 +1,199 @@
+:root{
+    --font-col: white;
+    --bg-col: black;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Ruda", sans-serif;
+    text-decoration: none;
+    color: var(--font-col);
+}
+
+body{
+    background-color: black;
+}
+
+/* Styling for navbar or header */
+header{
+    height: 10vh;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+header #logo,
+header #social-icons{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header #logo{
+    letter-spacing: 1px;
+}
+
+header #social-icons{
+    font-size: 30px;
+}
+
+header nav{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* Styling for landing section */
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+#landing-section{
+    height: 90vh;
+    background: url(https://img.freepik.com/free-photo/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai_188544-12347.jpg?t=st=1711188957~exp=1711192557~hmac=22e08077fcd1cd2fa1a698dd6c78d98bff86c8e2752a060d575812949c59829b&w=1380);
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#landing-section #slogan{
+    height: 100%;
+    width: 50%;
+    padding: 80px;
+}
+
+#landing-section #slogan h1{
+    font-family: "Quattrocento", serif;
+    font-size: 65px;
+    letter-spacing: 8px;
+}
+
+#landing-section #slogan hr,
+#landing-section .para{    
+    width: 65%;
+    margin: 30px 0px;   
+}
+
+#landing-section #slogan hr{
+    height: 10px;
+    background-color: #f24c4c;
+    border: none;
+    border-radius: 10px;
+}
+
+#landing-section #slogan p{
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* About us styling */
+
+#about-us{
+    padding: 50px 120px;
+}
+
+#about-us h1,
+#menu h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Quattrocento", serif;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+#about-us .about-us{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-us .about-us p,
+#menu p{
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+#about-us hr,
+#menu hr{
+    height: 8px;
+    background-color: #9f0101;
+    border: none;
+    width: 30%;
+    margin: auto;
+}
+
+#about-us .about-us .aboutus-para{
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    border-top: 4px solid #9f0101;
+}
+
+#about-us .about-us img{
+    height: 80%;
+    clip-path: circle(350px at center)
+}
+
+#about-us .about-us hr{
+    height: 8px;
+    background-color: #9f0101;
+    border: none;
+    width: 30%;
+}
+
+/* Menu items styling */
+
+#menu{
+    padding: 0px 100px;
+    height: 150vh;
+}
+
+#menu p{
+    margin-top: 50px;
+}
+
+.menu-container{
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid red;     */
+    display: grid;
+    grid-template-columns: repeat(2);
+    gap: 5px;
+}
+
+.menu-container .menu-items{
+    height: 33%;
+    width: 50%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-container .menu-items img{
+    width: 50%;
+}
+
+/* Footer styling */
+
+footer{
+    height: 30vh;
+    width: 100%;
+    border: 1px solid yellow;
+}
